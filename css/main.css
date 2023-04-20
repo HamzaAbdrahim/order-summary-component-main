@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+.page  {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100% 50vh;
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+}
+@media(max-width:768px) {
+    .page {
+        background-image: url(../images/pattern-background-mobile.svg)
+    }
+}
+.page .card {
+    position: relative;
+    z-index: 2;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 10px 15px;
+    box-shadow: 0 0 10px #ccc;
+} 
+.page .card .top-img {
+    margin-bottom: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+.page .card h1 {
+    color: var(--Dark-blue);
+    margin-bottom: 15px;
+}
+.page .card .titel {
+    padding: 25px;
+}
+.page .card .discraption {
+    color: var(--Desaturated-blue);
+    line-height: 1.7;
+}
+.page .card .change-songes {
+    margin-bottom: 40px;
+    background-color: var(--Very-pale-blue);
+    margin: 0 auto 30px;
+}
+.page .card .change-songes img {
+    margin-right: 10px;
+    height: 5vh;
+}
+.page .card .change-songes .info {
+    color: var(--Dark-blue);
+    margin-right: 100px;
+}
+.page .card .change-songes .change {
+    color: var(--Bright-blue);
+}
+.page .card .change-songes .change:hover {
+          color:rgb(56 41 224 / 30%);
+}
+.page .card .button .Payment {
+    text-decoration: none;
+    padding: 15px 80px;
+    color: white;
+    background-color: var(--Bright-blue);
+    width: fit-content;
+    margin: auto;
+}
+.page .card .button .Payment:hover {
+    background-color:rgb(56 41 224 / 30%);;
+}
+.page .card .button .Order {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    margin: 20px auto;
+    font-weight: bold;
+}
+.page .card .button .Order:hover {
+    color: var(--Dark-blue);
+}
+@media (min-width:375px) {
+    .page .card {
+        width: 400px;
+    }
+}
+
+
+
+
+
